@@ -150,7 +150,7 @@ footer .wrap{flex-direction:column}
 </div></header>
 
 <main id="top">
-<div class="hero"><video id="hv" autoplay muted loop playsinline preload="auto" aria-hidden="true"><source src="assets/hero.mp4" type="video/mp4"></video></div>
+<div class="hero"><video id="hv" autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture aria-hidden="true"><source src="assets/hero.mp4" type="video/mp4"><source src="assets/hero.webm" type="video/webm"></video></div>
 <div class="intro"><div class="wrap">
 <h1><span>Plan. </span><span>Build. </span><span>Deliver.</span></h1>
 <div class="row"><p class="lead">Omendra Developers Pvt Ltd is a tech-enabled civil and interior contracting partner. Photo-verified daily reports, itemised BOQs, zero-rework handover.</p>
@@ -223,8 +223,8 @@ footer .wrap{flex-direction:column}
 <article><b>~50</b><h3>Reliance Retail, Uttar Pradesh</h3><p>Reliance Fresh and Reliance Smart stores delivered across the state.</p></article>
 </div>
 <h3 class="ctitle">Our clients</h3>
-<div class="marquee" aria-label="Our clients"><div class="track" id="trk"><img src="assets/photo1.jpg" alt="NHSRCL" width="360" height="170"><img src="assets/photo2.jpg" alt="Insecticides India" width="360" height="170"><img src="assets/photo3.jpg" alt="Ion Exchange" width="360" height="170"><img src="assets/photo4.jpg" alt="Jaybee Laminations" width="360" height="170"><img src="assets/client1.jpg" alt="Burger King" width="360" height="170"><img src="assets/client2.jpg" alt="Aryan Foods" width="360" height="170"></div></div>
-<div class="gallery"><figure><img src="assets/client3.jpg" alt="Corporate workspace fit-out" loading="lazy"><figcaption>Corporate Office Fit-Out</figcaption></figure><figure><img src="assets/client4.jpg" alt="Office reception and workstations" loading="lazy"><figcaption>Office Reception & Workstations</figcaption></figure><figure><img src="assets/client5.jpg" alt="Illuminated building facade" loading="lazy"><figcaption>Building Facade & Lighting</figcaption></figure><figure><img src="assets/client6.jpg" alt="Restaurant interior" loading="lazy"><figcaption>Café & Restaurant Interior</figcaption></figure></div>
+<div class="marquee" aria-label="Our clients"><div class="track" id="trk"><img src="assets/logo-1.jpg" alt="NHSRCL" width="360" height="170"><img src="assets/logo-2.jpg" alt="Insecticides India" width="360" height="170"><img src="assets/logo-3.jpg" alt="Ion Exchange" width="360" height="170"><img src="assets/logo-4.jpg" alt="Jaybee Laminations" width="360" height="170"><img src="assets/logo-5.jpg" alt="Burger King" width="360" height="170"><img src="assets/logo-6.jpg" alt="Aryan Foods" width="360" height="170"></div></div>
+<div class="gallery"><figure><img src="assets/gallery-1.jpg" alt="Corporate workspace fit-out" loading="lazy"><figcaption>Corporate Office Fit-Out</figcaption></figure><figure><img src="assets/gallery-2.jpg" alt="Office reception and workstations" loading="lazy"><figcaption>Office Reception & Workstations</figcaption></figure><figure><img src="assets/gallery-3.jpg" alt="Illuminated building facade" loading="lazy"><figcaption>Building Facade & Lighting</figcaption></figure><figure><img src="assets/gallery-4.jpg" alt="Restaurant interior" loading="lazy"><figcaption>Café & Restaurant Interior</figcaption></figure></div>
 </div></section>
 
 <section id="contact" class="contact"><div class="wrap grid">
@@ -242,7 +242,7 @@ footer .wrap{flex-direction:column}
 </main>
 <footer><div class="wrap"><span>© Omendra Developers Pvt Ltd (ODPL). We build better.</span><span>Civil contracting &amp; interior fit-out</span></div></footer>
 <script>
-var v=document.getElementById('hv');v.muted=true;var p=v.play();if(p&&p.catch)p.catch(function(){document.addEventListener('click',function(){v.play()},{once:true})});
+var v=document.getElementById('hv');v.muted=true;var p=v.play();if(p&&p.catch)p.catch(function(){['click','touchstart','scroll'].forEach(function(ev){window.addEventListener(ev,function(){v.play()},{once:true,passive:true})})});
 var tk=document.getElementById('trk');if(tk){Array.prototype.slice.call(tk.children).forEach(function(n){var c=n.cloneNode(true);c.alt='';c.setAttribute('aria-hidden','true');tk.appendChild(c)})}
 var bg=document.getElementById('bg'),nv=document.getElementById('nav');
 function tg(o){nv.classList.toggle('open',o);bg.setAttribute('aria-expanded',o);bg.setAttribute('aria-label',o?'Close menu':'Open menu')}
